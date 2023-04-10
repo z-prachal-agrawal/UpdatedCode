@@ -1,0 +1,58 @@
+.card1style {
+  margin-left: 25px;
+}
+.textDesign {
+  display: flex;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  margin-bottom: 0.35em;
+  color: #1976d2;
+}
+.viewBlnc {
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-decoration: underline;
+}
+.dollar {
+  display: flex;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+}
+.date {
+  display: flex;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.6);
+}
+.link {
+  color: #1976d2;
+  display: flex;
+  text-decoration: underline;
+  text-decoration-color: rgba(25, 118, 210, 0.4);
+  margin-top: 24px;
+}
+.block {
+  position: absolute;
+}
+.heading {
+  font-weight: bold !important;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .card1style {
+    margin-left: 10px;
+  }
+} */
