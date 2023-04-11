@@ -51,6 +51,9 @@
 .heading {
   font-weight: bold !important;
 }
+.main {
+  display: block;
+}
 
 /* @media only screen and (max-width: 600px) {
   .card1style {

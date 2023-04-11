@@ -1,6 +1,6 @@
 import React from "react";
 import MiniDrawer from "./MiniDrawer";
-import { Box, Stack } from "@mui/material";
+import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import PrimaryAppBar from "./PrimaryAppBar";
 import Grid from "@mui/material/Grid";
@@ -10,7 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import "./style.css";
 import DummyTable from "./DummyTable";
-import TempLineChart from "./TempLineChart";
+import TempChart from "./TempChart";
 
 const Dashboard = () => {
   return (
@@ -18,9 +18,9 @@ const Dashboard = () => {
       <PrimaryAppBar />
       <Box className="box" sx={{ display: "flex", marginTop: "75px" }}>
         <MiniDrawer />
-        <Box sx={{ width: "100%" }}>
-          <Stack direction="row">
-            <Grid container spacing={3}>
+        <div className="main">
+          <Box sx={{ width: "100%" }}>
+            <Grid container spacing={3} direction="row">
               <Grid item lg={9} md={9} sm={12} xs={11}>
                 <Card
                   className="card1style"
@@ -30,7 +30,7 @@ const Dashboard = () => {
                   <CardContent>
                     <Typography className="textDesign">Today</Typography>
                   </CardContent>
-                  <TempLineChart />
+                  <TempChart />
                 </Card>
               </Grid>
 
@@ -73,8 +73,8 @@ const Dashboard = () => {
                 </Card>
               </Grid>
             </Grid>
-          </Stack>
-        </Box>
+          </Box>
+        </div>
 
         {/*<Box component="main" sx={{ flexGrow: 1, p: 3 }}></Box>*/}
       </Box>
