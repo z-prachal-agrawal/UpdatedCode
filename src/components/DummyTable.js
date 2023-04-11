@@ -35,7 +35,7 @@ const rows = [
 export default function DummyTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+      <Table className="table" size="small" aria-label="a dense table">
         <TableHead>
           <TableRow >
             <TableCell className="heading">Date</TableCell>

@@ -11,7 +11,14 @@ import { Data } from "./Data";
 
 function TempLineChart() {
   return (
-    <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+    <div
+      style={{
+        position: "relative",
+        display: "block",
+        justifyContent: "flex-start",
+      }}
+    >
+      {/*style={{ display: "flex", justifyContent: "space-evenly" }}*/}
       <LineChart
         layout="horizontal"
         width={800}

@@ -42,10 +42,11 @@
   display: flex;
   text-decoration: underline;
   text-decoration-color: rgba(25, 118, 210, 0.4);
-  margin-top: 24px;
+  margin-top: 8px;
 }
 .block {
-  position: absolute;
+  /* position: absolute; */
+  display: block;
 }
 .heading {
   font-weight: bold !important;

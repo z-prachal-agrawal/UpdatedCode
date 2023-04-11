@@ -10,69 +10,70 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import "./style.css";
 import DummyTable from "./DummyTable";
-import LineChart from "./TempLineChart";
-//import Chart from "./Chart";
-//import { fontWeight } from "@mui/system";
+import TempLineChart from "./TempLineChart";
 
 const Dashboard = () => {
   return (
     <div className="block">
       <PrimaryAppBar />
-      <Box className="box" sx={{ display: "flex", marginTop: "95px" }}>
+      <Box className="box" sx={{ display: "flex", marginTop: "75px" }}>
         <MiniDrawer />
         <Box sx={{ width: "100%" }}>
-          <Stack spacing={3} direction="row">
-            <Grid item xs={6}>
-              <Card
-                className="card1style"
-                variant="outlined"
-                sx={{ height: 45 + "vh", minWidth: "900px" }}
-              >
-                <CardContent>
-                  <Typography className="textDesign">Today</Typography>
-                </CardContent>
-                <LineChart />
-              </Card>
-            </Grid>
+          <Stack direction="row">
+            <Grid container spacing={3}>
+              <Grid item lg={9} md={9} sm={12} xs={11}>
+                <Card
+                  className="card1style"
+                  variant="outlined"
+                  sx={{ height: 45 + "vh", maxWidth: "900px" }}
+                >
+                  <CardContent>
+                    <Typography className="textDesign">Today</Typography>
+                  </CardContent>
+                  <TempLineChart />
+                </Card>
+              </Grid>
 
-            <Grid item xs={6}>
-              <Card
-                className="cardstyle"
-                variant="outlined"
-                sx={{ height: 45 + "vh", minWidth: "220px" }}
-              >
-                <CardContent>
-                  <Typography className="textDesign">
-                    Recent deposits
-                  </Typography>
+              <Grid item lg={3} md={3} sm={12} xs={11}>
+                <Card
+                  className="cardstyle"
+                  variant="outlined"
+                  sx={{ height: 45 + "vh", maxWidth: "250px" }}
+                >
+                  <CardContent>
+                    <Typography className="textDesign">
+                      Recent deposits
+                    </Typography>
 
-                  <Typography className="dollar">$3024.00</Typography>
-                  <Typography className="date">
-                    on 15March,2019
-                    <br />
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button className="viewBlnc">View Balance</Button>
-                </CardActions>
-              </Card>
+                    <Typography className="dollar">$3024.00</Typography>
+                    <Typography className="date">
+                      on 15March,2019
+                      <br />
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button className="viewBlnc">View Balance</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid item lg={12} md={12} xs={12}>
+                <Card
+                  className="card1style"
+                  variant="outlined"
+                  sx={{ height: 40 + "vh", maxWidth: "1145px" }}
+                >
+                  <CardContent>
+                    <Typography className="textDesign">
+                      Recent Orders
+                    </Typography>
+                    <DummyTable />
+                    <Typography className="link">See more Orders</Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
             </Grid>
           </Stack>
-          <Box sx={{ width: "97.5%", marginTop: "25px" }}>
-            <Grid item xs={6}>
-              <Card
-                className="card1style"
-                variant="outlined"
-                sx={{ height: 45 + "vh", minWidth: "800px" }}
-              >
-                <CardContent>
-                  <Typography className="textDesign">Recent Orders</Typography>
-                  <DummyTable />
-                  <Typography className="link">See more Orders</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Box>
         </Box>
 
         {/*<Box component="main" sx={{ flexGrow: 1, p: 3 }}></Box>*/}
