@@ -5,9 +5,9 @@ import Typography from "@mui/material/Typography";
 import PrimaryAppBar from "./PrimaryAppBar";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
+//import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
+//import Button from "@mui/material/Button";
 import "./style.css";
 import DummyTable from "./DummyTable";
 import TempChart from "./TempChart";
@@ -38,7 +38,12 @@ const Dashboard = () => {
                 <Card
                   className="cardstyle"
                   variant="outlined"
-                  sx={{ height: 45 + "vh", maxWidth: "250px" }}
+                  sx={{
+                    height: 45 + "vh",
+                    //maxWidth: "250px"
+                    // width: "100%",
+                    display: "flex",
+                  }}
                 >
                   <CardContent>
                     <Typography className="textDesign">
@@ -50,18 +55,26 @@ const Dashboard = () => {
                       on 15March,2019
                       <br />
                     </Typography>
+                    <Typography className="viewBlnc">
+                      View Balance <br />
+                    </Typography>
                   </CardContent>
-                  <CardActions>
+                  {/*  <CardActions>
                     <Button className="viewBlnc">View Balance</Button>
-                  </CardActions>
+                </CardActions>*/}
                 </Card>
               </Grid>
 
-              <Grid item lg={12} md={12} xs={12}>
+              <Grid item lg={12} md={12} xs={14}>
                 <Card
                   className="card1style"
                   variant="outlined"
-                  sx={{ height: 40 + "vh", maxWidth: "1145px" }}
+                  sx={{
+                    height: 40 + "vh",
+                    // maxWidth: "1145px"
+                    // width: "100%",
+                    display: "flex",
+                  }}
                 >
                   <CardContent>
                     <Typography className="textDesign">

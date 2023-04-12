@@ -1,6 +1,6 @@
-.card1style {
+/* .card1style {
   margin-left: 25px;
-}
+} */
 .textDesign {
   display: flex;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -13,11 +13,16 @@
 }
 .viewBlnc {
   margin: 0;
+  padding: 0;
+  display: flex;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-weight: 500;
+  font-size: 1.25rem;
   letter-spacing: inherit;
+  display: block;
+  position: relative;
+  text-decoration-color: #1976d2;
+  color: #1976d2;
   text-decoration: underline;
 }
 .dollar {
@@ -53,6 +58,8 @@
 }
 .main {
   display: block;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 /* @media only screen and (max-width: 600px) {
